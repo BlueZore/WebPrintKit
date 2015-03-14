@@ -35,15 +35,15 @@
             // ocx
             // 
             this.ocx.CopiesValue = "1";
-            this.ocx.DuplexValue = "双面垂直";
+            this.ocx.DuplexValue = "单面";
             this.ocx.InstalledPrintersValue = "HP LaserJet P2050 Series PCL6";
-            this.ocx.LandscapeValue = "横向";
+            this.ocx.LandscapeValue = "纵向";
             this.ocx.Location = new System.Drawing.Point(-1, 0);
             this.ocx.Name = "ocx";
             this.ocx.NoImageUrls = "";
-            this.ocx.PaperValue = "A3";
-            this.ocx.MarginsLeft = "20";
-            this.ocx.Urls = "http://localhost:8002/FarmPlat/AgricultureManage/LandContract2014/FMDS_PrintTheContract2014B.aspx?ID=2ae26641-0a6e-44f6-a002-4a3e16aeee45&FarmerID=57443834-d55c-4380-8f81-95d5a8428038&OrganiseUnitID=504&ReportYear=2015&IsStyle=0&IsA=B";
+            this.ocx.PaperValue = "A4";
+            this.ocx.OriginAtMargins = "1";
+            this.ocx.Urls = "http://172.31.132.6:8036/FarmPlat/CMDSManage/FMDS_FarmFarmerCollection/FMDS_FarmFarmerCollectionDetailB.aspx?IsHouseholder=1&ID=e7c5cc2d-56d6-47cc-b2c6-36968196b38f&CollectionYear=2015&WorkID=1250&Back=1";
             this.ocx.IsHeightFixed = "0";
             this.ocx.Size = new System.Drawing.Size(1300, 670);
             this.ocx.TabIndex = 0;
