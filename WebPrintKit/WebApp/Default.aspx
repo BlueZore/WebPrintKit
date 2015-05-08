@@ -6,9 +6,12 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <script src="jquery-1.4.1.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
+        <button onclick="show('2');return false;">测试一下</button>
+
         <object id="controlbyid" classid="clsid:{69C5DAC1-48CF-4B04-BAC6-2B397586FDCF}" codebase="/UpLoadFiles/OCX/WebPrintKit.cab" width="100%" height="100%">
             <%--打印机名称--%>
             <param name="InstalledPrintersValue" value="HP LaserJet P2050 Series PCL6" />
@@ -24,9 +27,21 @@
             <param name="IsHeightFixed" value="0" />
             <%--//1无页边距，0有页边距--%>
             <param name="OriginAtMargins" value="1" />
-            <param name="Urls" value="http://172.31.132.6:8036/FarmPlat/CMDSManage/FMDS_FarmFarmerCollection/FMDS_FarmFarmerCollectionDetailB.aspx?IsHouseholder=1&ID=e7c5cc2d-56d6-47cc-b2c6-36968196b38f&CollectionYear=2015&WorkID=1250&Back=1" />
+            <param name="Urls" value="http://www.w3school.com.cn/jquery/ajax_post.asp" />
 
         </object>
+
+        <script>
+
+            window.onload = function () {
+                document.getElementById("controlbyid").RegJs(window, "show");
+            }
+
+            function show(str) {
+                $.post("/Data.aspx?Code=1123&User=wsxh&Type=1");
+            }
+
+        </script>
     </form>
 </body>
 </html>
